@@ -3,3 +3,6 @@
 2. [SEARCHING](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SEARCHING)
    <br>-[Sequential Searching](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SEARCHING/SEQUENTIAL%20SEARCHING)</br>
    -[Binary Search](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SEARCHING/BINARY%20SEARCHING)
+3. [SORTING](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING)
+   <br>-[Bubble Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/BUBBLE%20SORT)</br>
+   -[Insertion Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/INSERTION%20SORT)
