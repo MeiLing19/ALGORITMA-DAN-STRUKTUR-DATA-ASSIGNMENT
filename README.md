@@ -5,4 +5,7 @@
    -[Binary Search](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SEARCHING/BINARY%20SEARCHING)
 3. [SORTING](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING)
    <br>-[Bubble Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/BUBBLE%20SORT)</br>
-   -[Insertion Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/INSERTION%20SORT)
+   -[Insertion Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/INSERTION%20SORT)</br>
+   -[Selection Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/SELECTION%20SORT)</br>
+   -[Exchange Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/EXCHANGE%20SORT)</br>
+   -[Challange](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/CHALLANGE)
