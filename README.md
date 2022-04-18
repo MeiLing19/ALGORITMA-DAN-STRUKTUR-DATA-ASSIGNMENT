@@ -9,3 +9,7 @@
    -[Selection Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/SELECTION%20SORT)</br>
    -[Exchange Sort](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/EXCHANGE%20SORT)</br>
    -[Challange](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/SORTING/CHALLANGE)
+4. [LINKED LIST](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/LINKED%20LIST)
+5. [STACK](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/STACK)
+6. [QUEUE](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/QUEUE)
+7. [TREE](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/tree/main/TREE)
