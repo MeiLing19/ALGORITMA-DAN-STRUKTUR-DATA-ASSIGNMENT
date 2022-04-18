@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <conio.h>
 
-typedef struct Mahasiswa {char NIM[9]; char nama[30]; float ipk;};
+typedef struct Mahasiswa
+{
+    char NIM[9];
+    char nama[30];
+    float ipk;
+};
 
 void main()
 {
