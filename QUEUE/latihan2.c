@@ -9,61 +9,71 @@ typedef struct
     int data[MAX];
     int head;
     int tail;
-}Queue;
+} Queue;
 
 Queue antrian;
 
-void Awal(){
-    antrian.head=antrian.tail=-1;
+void Awal()
+{
+    antrian.head = antrian.tail = -1;
 }
 
-int Kosong(){
-    if(antrian.tail == -1){
+int Kosong()
+{
+    if (antrian.tail == -1)
+    {
         return 1;
     }
-    else{
+    else
+    {
         return 0;
     }
 }
 
-int Penuh(){
-    if (antrian.tail == MAX-1)
+int Penuh()
+{
+    if (antrian.tail == MAX - 1)
     {
         return 1;
-    }else{
+    }
+    else
+    {
         return 0;
     }
-    
 }
 
-int Enqueue(int data){
-    if (Kosong()==1)
+int Enqueue(int data)
+{
+    if (Kosong() == 1)
     {
-        antrian.head = antrian.tail=0;
-        antrian.data[antrian.tail]=data;
+        antrian.head = antrian.tail = 0;
+        antrian.data[antrian.tail] = data;
         printf("%d masuk!\n", antrian.data[antrian.tail]);
         void Tampil();
         {
-            if (Kosong()==0)
+            if (Kosong() == 0)
             {
                 for (int i = antrian.head; i < antrian.tail; i++)
                 {
                     printf("%d ", antrian.data[i]);
                 }
-            } else{
+            }
+            else
+            {
                 printf("Isi antrian kosong!");
             }
-            
-        }           
-    } else if (Penuh()==0)
+        }
+    }
+    else if (Penuh() == 0)
     {
         antrian.tail++;
-        antrian.data[antrian.tail]=data;
+        antrian.data[antrian.tail] = data;
         printf("%d masuk!\n", antrian.data[antrian.tail]);
-    }  
+    }
 }
 
-int Dequeue(){
+int Dequeue()
+{
     int antri = antrian.data[antrian.head];
     for (int i = antrian.head; i < antrian.tail; i++)
     {
@@ -73,96 +83,109 @@ int Dequeue(){
     return antri;
 }
 
-void Tampil(){
-    if (Kosong()==0)
+void Tampil()
+{
+    if (Kosong() == 0)
     {
         for (int i = antrian.head; i <= antrian.tail; i++)
         {
             printf("%d ", antrian.data[i]);
         }
     }
-    else {
+    else
+    {
         printf("Tidak ada data dalam antrian!");
     }
-    
 }
 
-void ClearQueue(){
-    antrian.head=antrian.tail=-1;
+void ClearQueue()
+{
+    antrian.head = antrian.tail = -1;
     printf("Data sudah dibersihkan!");
 }
 
-    typedef struct
+typedef struct
+{
+    int top;
+    char data[5][5];
+} STACK;
+
+STACK tumpuk;
+
+void init()
+{
+    tumpuk.top = -1;
+}
+
+int isFull()
+{
+    if (tumpuk.top == MAX_STACK)
     {
-        int top;
-        char data[5][5];
-    }STACK;
-
-    STACK tumpuk;
-
-    void init(){
-        tumpuk.top = -1;
+        return 1;
     }
-
-    int isFull(){
-        if (tumpuk.top == MAX_STACK)
-        {
-            return 1;
-        }else{
-            return 0;
-        }
-        
+    else
+    {
+        return 0;
     }
+}
 
-    int isEmpty(){
-        if (tumpuk.top == -1)
-        {
-            return 1;
-        }else{
-            return 0;
-        }
-        
+int isEmpty()
+{
+    if (tumpuk.top == -1)
+    {
+        return 1;
     }
+    else
+    {
+        return 0;
+    }
+}
 
-    void Push(char d[5]){
-        tumpuk.top++;
-        strcpy(tumpuk.data[tumpuk.top], d);
-    }
+void Push(char d[5])
+{
+    tumpuk.top++;
+    strcpy(tumpuk.data[tumpuk.top], d);
+}
 
-    void Pop(){
-        printf("Data yang diambil = %s\n", tumpuk.data[tumpuk.top]);
-        tumpuk.top--;
-    }
+void Pop()
+{
+    printf("Data yang diambil = %s\n", tumpuk.data[tumpuk.top]);
+    tumpuk.top--;
+}
 
-    void tampilStack(){
-        for (int i = tumpuk.top; i >= 0; i--)
-        {
-            printf("Data: %s\n", tumpuk.data[i]);
-        }
-        
+void tampilStack()
+{
+    for (int i = tumpuk.top; i >= 0; i--)
+    {
+        printf("Data: %s\n", tumpuk.data[i]);
     }
+}
 
-    void ClearStack(){
-        tumpuk.top = -1;
-    }
+void ClearStack()
+{
+    tumpuk.top = -1;
+}
 
 struct node
 {
     int data;
-    struct node* next;
+    struct node *next;
 };
-    typedef struct node node_t;
+typedef struct node node_t;
 
 struct node *head;
 
-void first(){
+void first()
+{
     struct node *ptr;
     int item;
-    ptr = (struct node *) malloc(sizeof(struct node *));
+    ptr = (struct node *)malloc(sizeof(struct node *));
     if (ptr == NULL)
     {
         printf("\n OVERFLOW");
-    }else{
+    }
+    else
+    {
         printf("\nInsert value : ");
         scanf("%d", &item);
         ptr->data = item;
@@ -170,27 +193,30 @@ void first(){
         head = ptr;
         printf("\n Data berhasil disimpan di Node awal");
     }
-    
 }
 
-void last(){
+void last()
+{
     struct node *ptr, *temp;
     int item;
-    ptr = (struct node *) malloc(sizeof(struct node *));
+    ptr = (struct node *)malloc(sizeof(struct node *));
     if (ptr == NULL)
     {
         printf("\n Overflow");
     }
-    else{
+    else
+    {
         printf("Masukkan data: ");
         scanf("%d", &item);
         ptr->data = item;
-        if(head == NULL){
+        if (head == NULL)
+        {
             ptr->next = NULL;
             head = ptr;
             printf("Berhasil disimpan dalam node");
         }
-        else{
+        else
+        {
             temp = head;
             while (temp->next != NULL)
             {
@@ -199,12 +225,12 @@ void last(){
             temp->next = ptr;
             ptr->next = NULL;
             printf("Data berhasil disimpan di node akhir");
-            
         }
-    }   
+    }
 }
 
-void random(){
+void random()
+{
     int i, loc, item;
     struct node *ptr, *temp;
     ptr = (struct node *)malloc(sizeof(struct node));
@@ -212,7 +238,8 @@ void random(){
     {
         printf("Overflow!");
     }
-    else{
+    else
+    {
         printf("Masukkan data: ");
         scanf("%d", &item);
         ptr->data = item;
@@ -222,7 +249,7 @@ void random(){
         for (i = 0; i < loc; i++)
         {
             temp = temp->next;
-            if (temp==NULL)
+            if (temp == NULL)
             {
                 printf("\n Tidak dapat tersimpan!");
                 return;
@@ -232,28 +259,29 @@ void random(){
         temp->next = ptr;
         printf("\n NODE berhasil disimpan!");
     }
-    
 }
 
-void show(){
+void show()
+{
     struct node *ptr;
     ptr = head;
     if (ptr == NULL)
     {
         printf("Tidak ada data");
-    }else{
+    }
+    else
+    {
         printf("Print data ...");
         while (ptr != NULL)
         {
             printf("%d", ptr->data);
             ptr = ptr->next;
         }
-        
     }
-    
 }
 
-void linkedListMenu(){
+void linkedListMenu()
+{
     int choice = 0;
     while (choice != 5)
     {
@@ -268,95 +296,106 @@ void linkedListMenu(){
 
         switch (choice)
         {
-            case 1:
+        case 1:
             first();
             break;
 
-            case 2:
+        case 2:
             last();
             break;
 
-            case 3:
+        case 3:
             random();
             break;
 
-            case 4:
+        case 4:
             show();
             break;
 
-            case 5:
+        case 5:
             exit(0);
             break;
-        
-            default:
+
+        default:
             printf("Silahkan masukkan pilihanmu");
             break;
         }
     }
-
 }
 
-void StackMenu(){
+void StackMenu()
+{
     init();
 
-        int pil;
-        char dt[5];
+    int pil;
+    char dt[5];
 
-        do
+    do
+    {
+        printf("1. Push\n");
+        printf("2. Pop\n");
+        printf("3. Cetak isi array stack\n");
+        printf("4. Hapus isi array stack\n");
+        printf("5. Keluar\n");
+        printf("Pilihan anda? ");
+        scanf("%d", &pil);
+
+        switch (pil)
         {
-            printf("1. Push\n");
-            printf("2. Pop\n");
-            printf("3. Cetak isi array stack\n");
-            printf("4. Hapus isi array stack\n");
-            printf("5. Keluar\n");
-            printf("Pilihan anda? ");
-            scanf("%d", &pil);
-
-            switch (pil)
+        case 1:
+            if (isFull() != 1)
             {
-                case 1: if (isFull() != 1)
-                {
-                    printf("Data yang ingin diinputkan = ");
-                    scanf("%s", dt);
-                    Push(dt);
-                }else{
-                    printf("Stack sudah penuh!\n");
-                }
-                    break;
-                case 2: if (isEmpty() != 1)
-                {
-                    Pop();
-                }else{
-                    printf("Stack masih kosong!\n");
-                }
-                    break;
-                
-                case 3: if (isEmpty() != 1)
-                {
-                    tampilStack();
-                }else{
-                    printf("\n masih kosong \n");
-                }
-                break;
+                printf("Data yang ingin diinputkan = ");
+                scanf("%s", dt);
+                Push(dt);
+            }
+            else
+            {
+                printf("Stack sudah penuh!\n");
+            }
+            break;
+        case 2:
+            if (isEmpty() != 1)
+            {
+                Pop();
+            }
+            else
+            {
+                printf("Stack masih kosong!\n");
+            }
+            break;
 
-                case 4: ClearStack();
-                printf("Data sudah dihapus!\n");
-                break;
+        case 3:
+            if (isEmpty() != 1)
+            {
+                tampilStack();
+            }
+            else
+            {
+                printf("\n masih kosong \n");
+            }
+            break;
 
-                default:
-                    break;
-                }
-        } while (pil != 5);
-        printf("Keluar dari program\n");
+        case 4:
+            ClearStack();
+            printf("Data sudah dihapus!\n");
+            break;
+
+        default:
+            break;
+        }
+    } while (pil != 5);
+    printf("Keluar dari program\n");
 }
 
-void QueueMenu(){
-     int choice, data;
+void QueueMenu()
+{
+    int choice, data;
     Awal();
     do
     {
         printf("\n");
-        printf("1. Enqueue\n"); //masuk satu data
+        printf("1. Enqueue\n"); // masuk satu data
         printf("2. Dequeue\n"); // keluar satu data
         printf("3. Lihat isi antrian\n");
         printf("4. Hapus isi antrian\n");
@@ -382,11 +421,12 @@ void QueueMenu(){
             break;
         default:
             break;
-        }    
+        }
     } while (choice != 5);
 }
 
-int main(){
+int main()
+{
     int choice = 0;
     while (choice != 5)
     {
@@ -400,26 +440,25 @@ int main(){
 
         switch (choice)
         {
-            case 1:
+        case 1:
             linkedListMenu();
             break;
 
-            case 2:
+        case 2:
             StackMenu();
             break;
 
-            case 3:
+        case 3:
             QueueMenu();
             break;
 
-            case 4:
+        case 4:
             exit(0);
             break;
-        
-            default:
+
+        default:
             printf("Silahkan masukkan pilihanmus");
             break;
         }
     }
-
 }
