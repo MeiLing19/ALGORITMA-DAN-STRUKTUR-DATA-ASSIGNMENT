@@ -2,7 +2,8 @@
 
   - Tree(pohon) adalah kumpulan node yang saling terhubung satu sama lain dalam suatu kesatuan yang membentuk layaknya struktur sebuah pohon.
   - Struktur pohon adalah suatu cara merepresentasikan suatu struktur hirarki (one-to-many) secara grafis yang mirip sebuah pohon, walaupun pohon tersebut hanya tampak sebagai kumpulan node-node dari atas ke bawah.
-  - Beberapa jenis tree adalah sebagai berikut :
+
+## Jenis Tree
   
 1. Tree Statik
     <br>↳ isi node-nodenya tetap karena bentuk pohonnya sudah ditentukan.
@@ -16,7 +17,21 @@
 
 ## [Terminologi Tree](https://github.com/MeiLing19/ALGORITMA-DAN-STRUKTUR-DATA-ASSIGNMENT/blob/main/TREE/terminologi%20tree.png)
 
-  - Binary tree adalah suatu tree dengan syarat bahwa tiap node hanya boleh memiliki maksimal dua subtree dan kedua subtree tersebut harus tepisah, maksimal memiliki dua child.
+## Binary Tree
+   - Binary tree adalah suatu tree dengan syarat bahwa tiap node hanya boleh memiliki maksimal dua subtree dan kedua subtree tersebut harus tepisah, maksimal memiliki dua child.
+   (https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/1200px-Binary_search_tree.svg.png)
+  
+## Jenis Binary Tree
+   - Full Binary Tree
+     <br>↳ semua node(kecuali leaf) pasti memiliki 2 anak dan tiap tree memiliki panjang path yang sama.
+     (https://cdn.programiz.com/sites/tutorial2program/files/full-binary-tree_0.png)
+   - Complete Binary Tree
+     <br>↳ Mirip dengan full binary tree, namun tiap subtree boleh memiliki panjang path yang berbeda dan tiap node(kecuali leaf) memiliki 2 anak.
+     (https://cdn.programiz.com/sites/tutorial2program/files/complete-binary-tree_0.png)
+   - Skewed Binary Tree
+     <br>↳ semua nodenya(kecuali leaf) memiliki 1 anak.
+     (https://cdn.programiz.com/sites/tutorial2program/files/skewed-binary-tree_0.png)
+
 
 ## Operasi-operasi tree : 
 1. Create
