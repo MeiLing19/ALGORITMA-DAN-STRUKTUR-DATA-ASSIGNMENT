@@ -19,7 +19,7 @@
 
 ## Binary Tree
    - Binary tree adalah suatu tree dengan syarat bahwa tiap node hanya boleh memiliki maksimal dua subtree dan kedua subtree tersebut harus tepisah, maksimal memiliki dua child.
-   <br>[Contoh Binary Tree]!(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/1200px-Binary_search_tree.svg.png)
+   !<br>[Contoh Binary Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/1200px-Binary_search_tree.svg.png)
   
 ## Jenis Binary Tree
    - Full Binary Tree
