@@ -58,11 +58,11 @@
    
 ## Jenis Transverse
 
- 1. [Pre Order]
+ 1. Pre Order
     <br>↳ cetak node yang dikunjungi, kunjungi left, kunjungi right (tengah, kiri, kanan)
     
- 2. [In Order]
+ 2. In Order
     <br>↳   kunjungi left, cetak node yang dikunjungi, kunjungi right (kiri, tengah, kanan)
 
- 3. [Post Order]
+ 3. Post Order
     <br>↳  kunjungi left, kunjungi right, cetak node yang dikunjungi (kiri, kanan, tengah)
